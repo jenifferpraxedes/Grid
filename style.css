@@ -1,0 +1,120 @@
+*{
+    background-color: #EDF2F4;
+}
+
+.grid-container {
+    width: 400px;
+    margin: 10em auto;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 15% 15% 39% 30%;
+    align-items: stretch;
+    border-radius: 15px;
+    justify-content: center;
+    align-content: center;
+    padding: 1px;
+}
+
+.marcador {
+    box-shadow: inset 0px 3px 10px -3px #444444;
+}
+
+
+.marcador:hover {
+    transform: translateY(-5px);
+    box-shadow: inset 0px 10px 20px 20px #f0f0f0;
+}
+
+.marcador.zero {
+    margin: 37% 84px 72px;
+    justify-content: space-around;
+    
+}
+
+.marcador.um {
+    margin: 14% 83px 26px;
+    justify-content: space-around;
+}
+
+.marcador.dois {
+    margin: 27% 32px 28px;
+    justify-content: space-around;
+}
+
+.marcador.tres {
+    margin: 27% 32px 28px;
+    justify-content: space-around;
+}
+
+.marcador.quatro {
+    margin: 25% 185px 98px;
+    justify-content: space-around;
+}
+
+.marcador.cinco {
+    margin: 35% 84px 91px;
+    justify-content: space-around;
+}
+
+.marcador.seis {
+    margin: 35% 84px 77px;
+    justify-content: space-around;
+}
+
+span {
+    margin: auto;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background:  #c6c2d6;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+.item {
+    background: #9480b3;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+
+.item.zero {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.item.um {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.item.dois {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.item.tres {
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.item.quatro {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 1;
+}
+
+.item.cinco {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 1;
+}
+
+.item.seis {
+    grid-column: 3 / span 2;
+    grid-row: 4 / span 1;
+}
